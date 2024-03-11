@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Text.Json.Serialization;
 
 namespace ApiEstatisticasCrimes.Models
 {
@@ -10,6 +11,8 @@ namespace ApiEstatisticasCrimes.Models
 
         public bool ArmaFogo { get; set; }
 
+
+        [JsonIgnore]
         public IEnumerable<Assalto>? Assaltos { get; set; }
     }
 }

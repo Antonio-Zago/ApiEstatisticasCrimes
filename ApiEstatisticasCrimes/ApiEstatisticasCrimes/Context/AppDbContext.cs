@@ -31,7 +31,7 @@ namespace ApiEstatisticasCrimes.Context
         public DbSet<Zona> Zonas { get; set; }
 
 
-
+        public DbSet<TipoArma> TipoArmas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
